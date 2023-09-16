@@ -35,7 +35,6 @@ body {
   gap: 32px;
 }
 
-
 .header__links-list-item {
   font-weight: 400;
   font-size: 18px;
@@ -139,10 +138,9 @@ body {
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  line-height: 28px; /* 127.273% */
+  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 14px;
   word-spacing: 2px;
   background-color: transparent;
 }
@@ -189,16 +187,13 @@ body {
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
   height: 450px;
   padding: 50px 40px;
-}
-
-.card-link {
-  text-decoration: none;
 }
 
 .card__title {

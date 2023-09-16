@@ -1,11 +1,8 @@
-/* место для вашего кода */
-
 body {
   max-width: 1440px;
   margin: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: bisque;
   background-color: #FFF;
 }
 
@@ -352,7 +349,7 @@ body {
   flex-direction: column;
 }
 
-.footer__menu-list{
+.footer__menu-list {
   display: flex;
   flex-direction: column;
   justify-content: center;

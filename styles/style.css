@@ -64,7 +64,7 @@ body {
   min-height: 760px;
   padding: 165px 50px 50px 50px;
   color: #FFF;
-  background-image: url(/ono-tebe-nado/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -7,13 +7,17 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 293px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 92px 50px;
   color: #000;
   font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -21,17 +25,21 @@ body {
   justify-content: center;
   align-items: center;
   width: 148px;
-  margin-right: 142px;
+  margin: 0;
 }
 
 .header__logo-image {
   width: 100%;
 }
 
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .header__links-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 32px;
 }
 
@@ -44,12 +52,18 @@ body {
   list-style: circle;
 }
 
+.container__address {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .address {
+  width: 240px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  text-underline-offset: 5px;
   line-height: 24px;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit {
@@ -61,7 +75,6 @@ body {
   z-index: 0;
   display: flex;
   flex-direction: column;
-  min-height: 760px;
   padding: 165px 50px 50px 50px;
   color: #FFF;
   background-image: url(../images/cover.jpg);
@@ -114,12 +127,12 @@ body {
 .cover__description {
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 78px;
 }
 
 .cover__description-text {
-  margin-left: 372px;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -127,7 +140,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 13px;
+  word-spacing: 12px;
 }
 
 .bet-button {
@@ -192,8 +205,11 @@ body {
 
 .card {
   position: relative;
-  height: 450px;
+  height: 100%;
   padding: 50px 40px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 }
 
 .card__title {
@@ -216,12 +232,16 @@ body {
   white-space: normal;
 }
 
-.card__title__two {
-  margin-bottom: 30px;
+.book__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.card__title__three {
-  margin-bottom: 84px;
+.picture__container {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
 }
 
 .white__space {
@@ -241,23 +261,14 @@ body {
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -266,7 +277,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: normal;
-  letter-spacing: 1px;
   text-underline-offset: 5px;
 }
 
@@ -274,14 +284,19 @@ body {
   display: grid;
   grid-template-columns: 430px auto;
   column-gap: 25px;
-  padding: 0 50px;
+  padding: 0 50px 181px 50px;
 }
 
-.column-one {
-  padding: 0 95px;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.column-two {
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   padding-top: 100px;
 }
 
@@ -299,7 +314,6 @@ body {
 }
 
 .about__title {
-  margin-bottom: 100px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -307,7 +321,7 @@ body {
   text-transform: uppercase;
 }
 
-.about__text__block {
+.about__texts {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -324,7 +338,7 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 90px;
+  padding: 0 50px 90px;
 }
 
 .footer__social-list {
@@ -333,12 +347,12 @@ body {
 }
 
 .footer__social-icon {
- width: 48px;
+  width: 48px;
   height: 48px;
 }
 
 .footer__social-list-item {
-  list-style-type: none;
+  list-style-type: none; 
 }
 
 .footer__menu {

@@ -351,9 +351,7 @@ body {
   height: 48px;
 }
 
-.footer__social-list-item {
-  list-style-type: none; 
-}
+
 
 .footer__menu {
   display: flex;

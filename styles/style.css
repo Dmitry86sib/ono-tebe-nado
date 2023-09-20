@@ -89,7 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 131px;
+  margin-bottom: 135px;
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
@@ -162,7 +162,7 @@ body {
 .lots {
   display: flex;
   flex-direction: column;
-  padding: 180px 50px;
+  padding: 180px 50px 181px;
   background-color: #FFF;
 }
 
@@ -200,13 +200,15 @@ body {
 
 .card-link {
   display: block;
-  height: 100%;
+  /* height: 100%; */
+  height: 450px;
   text-decoration: none;
 }
 
 .card {
   position: relative;
-  min-height: 450px;
+  /* min-height: 450px; */
+  height: 100%;
   padding: 50px 40px;
   background-repeat: no-repeat;
   background-position: right center;
@@ -280,6 +282,7 @@ body {
   font-size: 20px;
   line-height: normal;
   text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
 }
 
 .about {

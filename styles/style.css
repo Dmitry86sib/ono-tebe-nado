@@ -9,7 +9,7 @@ body {
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 92px 50px 96px;
+  padding: 91px 50px 95px;
   color: #000;
   font-size: 18px;
 }

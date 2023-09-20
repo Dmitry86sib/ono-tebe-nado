@@ -147,7 +147,7 @@ body {
 .bet-button {
   box-sizing: border-box;
   border: 1px solid white;
-  padding: 12px 30px;
+  padding: 11px 32px;
   color: #FFF;
   font-weight: 400;
   font-size: 22px;
@@ -221,6 +221,7 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-transform: uppercase;
+  text-decoration-thickness: 1px;
 }
 
 .card__title__one {

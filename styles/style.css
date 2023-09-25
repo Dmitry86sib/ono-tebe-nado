@@ -8,16 +8,10 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 92px 50px 92px;
   color: #000;
   font-size: 18px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header__logo {
@@ -25,7 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 148px;
-  margin: 0;
+  height: 105px;
+  margin: 0 auto;
 }
 
 .header__logo-image {
@@ -52,7 +47,7 @@ body {
   list-style: circle;
 }
 
-.container__address {
+.address__box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -137,11 +132,10 @@ body {
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  line-height: 28px; /* 127.273% */
-  letter-spacing: 1px;
+  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 12px;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -155,7 +149,6 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  word-spacing: 2px;
   background-color: transparent;
 }
 
@@ -194,19 +187,22 @@ body {
 
 .lots__card-list-item {
   flex-grow: 1;
-  flex-basis: calc(33.33% - 25px);
+  flex-basis: 430px;
   list-style-type: none;
 }
 
 .card-link {
   display: block;
-  height: 450px;
+  height: 100%;
   text-decoration: none;
 }
 
 .card {
   position: relative;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
   padding: 50px 40px;
   background-repeat: no-repeat;
   background-position: right center;
@@ -224,41 +220,11 @@ body {
   text-transform: uppercase;
 }
 
-.card__title__one {
-  white-space: nowrap;
-}
-
-.card__title__one-two {
-  display: inline-block;
-  margin-bottom: 202px;
-  white-space: normal;
-}
-
-.book__container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.picture__container {
-  display: flex;
-  flex-direction: column;
-  gap: 82px;
-}
-
-.white__space {
-  white-space: nowrap;
-}
-
 .card__text {
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 120%;
-}
-
-.card__text__book {
-  overflow-wrap: break-word;
 }
 
 .card_type_film {

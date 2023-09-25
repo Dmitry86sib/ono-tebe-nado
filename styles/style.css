@@ -8,7 +8,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   padding: 92px 50px 92px;
   color: #000;
   font-size: 18px;
@@ -47,13 +47,10 @@ body {
   list-style: circle;
 }
 
-.address__box {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 240px;
   font-weight: 400;
   font-size: 18px;
@@ -62,9 +59,13 @@ body {
   text-underline-offset: 4px;
 }
 
+.header__address {
+  justify-self: end;
+}
+
 .header__links-list-item_no-bullit {
   list-style-type: none;
-}
+} 
 
 .cover {
   position: relative;

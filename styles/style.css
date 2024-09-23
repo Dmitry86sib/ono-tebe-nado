@@ -79,7 +79,7 @@ body {
 }
 
 .cover__title {
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -95,7 +95,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -120,7 +120,6 @@ body {
 }
 
 .cover__description {
-  z-index: 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -139,9 +138,10 @@ body {
 
 .bet-button {
   box-sizing: border-box;
-  border: 1px solid white;
+  font-family: Raleway, sans-serif;
+  border: 1px solid currentColor;
   padding: 11px 32px;
-  color: #FFF;
+  color: currentColor;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -166,13 +166,6 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
-}
-
-.card__title,
-.card__text {
-  position: relative;
-  z-index: 2;
-  color: #fff;
 }
 
 .lots__card-list {
@@ -204,8 +197,9 @@ body {
   min-height: 563px;
   padding: 50px 40px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
   background-size: cover;
+  z-index: 1;
 }
 
 .card__title {
